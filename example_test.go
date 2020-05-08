@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 func ExampleDecoder_AddTagFn_duration() {

@@ -3,7 +3,7 @@ package edn_test
 import (
 	"fmt"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 type Point3 struct {

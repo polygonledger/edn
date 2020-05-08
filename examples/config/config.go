@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"time"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 type Config struct {

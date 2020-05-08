@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 type PermissionSet int

@@ -1,6 +1,6 @@
 # Go implementation of EDN, extensible data notation
 
-[![GoDoc](https://godoc.org/olympos.io/encoding/edn?status.svg)](https://godoc.org/olympos.io/encoding/edn)
+[![GoDoc](https://godoc.org/github.com/polygonledger/edn?status.svg)](https://godoc.org/github.com/polygonledger/edn)
 
 go-edn is a Golang library to read and write
 [EDN](https://github.com/edn-format/edn) (extensible data notation), a subset of
@@ -21,19 +21,19 @@ If you wonder why you should (or should not) use EDN, you can have a look at the
 
 ## Installation and Usage
 
-The import path for the package is `olympos.io/encoding/edn`
+The import path for the package is `github.com/polygonledger/edn`
 
 To install it, run:
 
 ```shell
-go get olympos.io/encoding/edn
+go get github.com/polygonledger/edn
 ```
 
-To use it in your project, you import `olympos.io/encoding/edn` and refer to it as `edn`
+To use it in your project, you import `github.com/polygonledger/edn` and refer to it as `edn`
 like this:
 
 ```go
-import "olympos.io/encoding/edn"
+import "github.com/polygonledger/edn"
 
 //...
 
@@ -54,7 +54,7 @@ go-edn also ships with keywords, symbols and tags as types.
 
 For a longer introduction on how to use the library, see
 [introduction.md](docs/introduction.md). If you're familiar with the JSON
-package, then the [API Documentation](https://godoc.org/olympos.io/encoding/edn) might
+package, then the [API Documentation](https://godoc.org/github.com/polygonledger/edn) might
 be the only thing you need.
 
 ## Example Usage
@@ -78,7 +78,7 @@ type Person struct {
 With go-edn, we can do as follows to read and write these types:
 
 ```go
-import "olympos.io/encoding/edn"
+import "github.com/polygonledger/edn"
 
 //...
 

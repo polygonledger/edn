@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 type Notifiable interface {

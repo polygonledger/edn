@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 func main() {

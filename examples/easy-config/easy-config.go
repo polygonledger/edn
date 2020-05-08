@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/satori/go.uuid"
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 type Config struct {

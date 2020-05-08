@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"olympos.io/encoding/edn"
+	"github.com/polygonledger/edn"
 )
 
 // Typically, you'd also include timestamps here. Imagine that they are here.
