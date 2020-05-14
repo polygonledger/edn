@@ -170,6 +170,19 @@ func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error) {
 	return buf.Bytes(), nil
 }
 
+func MarshalIndentSpace(v interface{}, prefix, indent string) ([]byte, error) {
+	b, err := Marshal(v)
+	if err != nil {
+		return nil, err
+	}
+	var buf bytes.Buffer
+	err = IndentSpace(&buf, b, prefix, indent)
+	if err != nil {
+		return nil, err
+	}
+	return buf.Bytes(), nil
+}
+
 // MarshalPPrint is like Marshal but applies PPrint to format the output.
 func MarshalPPrint(v interface{}, opts *PPrintOpts) ([]byte, error) {
 	b, err := Marshal(v)

@@ -173,3 +173,17 @@ func TestJSONEncoding(t *testing.T) {
 	testEncode(t, jsonOnly, `{:data"hi"}`)
 	testEncode(t, jsonAndEdn, `{:edn"hi"}`)
 }
+
+func TestMapEncoding(t *testing.T) {
+
+	type Person struct {
+		Name      string `edn:"name"`
+		Birthyear int    `edn:"born"`
+	}
+	user := Person{Name: "Hans", Birthyear: 1990}
+
+	dat, _ := Marshal(user)
+	if string(dat) != "{:name \"Hans\" :born 1990}" {
+		t.Error("fails", string(dat))
+	}
+}
